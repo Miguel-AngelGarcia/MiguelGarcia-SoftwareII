@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"com.example.miguelgarciasoftwareii","l":"com.example.Controller"},{"m":"com.example.miguelgarciasoftwareii","l":"DatabaseAccessObject"},{"m":"com.example.miguelgarciasoftwareii","l":"helper"},{"m":"com.example.miguelgarciasoftwareii","l":"Model"}];updateSearchResults();

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="532.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.LoginScreenController">
+   <children>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="532.0" snapToPixel="false">
+         <children>
+            <StackPane prefHeight="588.0" prefWidth="532.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#1f93ff00" height="505.0" stroke="#8bc8ff" strokeType="INSIDE" strokeWidth="2.0" width="369.0">
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                  </Rectangle>
+                  <Button id="sign in" fx:id="signOn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#signOnButton" prefHeight="50.0" prefWidth="146.0" text="Sign on" textFill="#989898" StackPane.alignment="CENTER">
+                     <StackPane.margin>
+                        <Insets top="100.0" />
+                     </StackPane.margin>
+                  </Button>
+                  <TextField id="Username" fx:id="userName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="296.0" promptText="Username" StackPane.alignment="CENTER">
+                     <StackPane.margin>
+                        <Insets bottom="120.0" />
+                     </StackPane.margin>
+                  </TextField>
+                  <PasswordField id="Password" fx:id="password" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="296.0" promptText="Password" StackPane.alignment="CENTER">
+                     <StackPane.margin>
+                        <Insets bottom="60.0" />
+                     </StackPane.margin>
+                  </PasswordField>
+                  <Rectangle fx:id="errorBox" arcHeight="10.0" arcWidth="10.0" fill="#e4e4e4" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="311.0">
+                     <StackPane.margin>
+                        <Insets top="190.0" />
+                     </StackPane.margin>
+                  </Rectangle>
+                  <HBox id="Error Box" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="303.0">
+                     <children>
+                        <ImageView fx:id="sadCat" fitHeight="24.0" fitWidth="26.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@Sad%203.png" />
+                           </image>
+                        </ImageView>
+                        <Label id="if error" fx:id="errorLabel" alignment="CENTER" opacity="0.0" prefHeight="25.0" prefWidth="270.0" text="Please enter a valid Username or Password" textFill="#e197b9" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <StackPane.margin>
+                        <Insets top="190.0" />
+                     </StackPane.margin>
+                     <padding>
+                        <Insets left="9.0" />
+                     </padding>
+                  </HBox>
+                  <ImageView fitHeight="129.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER">
+                     <image>
+                        <Image url="@Teto.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets bottom="300.0" left="30.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="255.0" StackPane.alignment="CENTER">
+                     <children>
+                        <Label id="Location" fx:id="location" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="65.0" text="Location:" textFill="#989898">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin></Label>
+                        <Label id="Language" fx:id="timezone" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="108.0" text="TimeZone" textFill="#989898" />
+                     </children>
+                     <StackPane.margin>
+                        <Insets left="52.0" top="480.0" />
+                     </StackPane.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="255.0">
+                     <children>
+                        <Label id="Location" fx:id="language" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="65.0" text="Language:" textFill="#989898">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin></Label>
+                        <Label id="TimeZone" fx:id="langResult" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="108.0" text="LangResult" textFill="#989898" />
+                     </children>
+                     <StackPane.margin>
+                        <Insets left="52.0" top="440.0" />
+                     </StackPane.margin>
+                  </HBox>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

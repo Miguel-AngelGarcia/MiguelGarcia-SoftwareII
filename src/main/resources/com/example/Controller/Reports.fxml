@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.ReportsController">
+    <children>
+        <ImageView fitHeight="206.0" fitWidth="260.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="641.0">
+            <image>
+                <Image url="@Teto.png" />
+            </image>
+        </ImageView>
+        <VBox id="Below Kitty" layoutX="634.0" layoutY="496.0" prefHeight="55.0" prefWidth="141.0">
+            <children>
+                <HBox id="Customer" prefHeight="25.0" prefWidth="129.0" />
+            </children>
+        </VBox>
+        <VBox id="Info Box" layoutX="33.0" layoutY="194.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="852.0">
+            <padding>
+                <Insets top="30.0" />
+            </padding>
+         <children>
+            <TabPane prefHeight="381.0" prefWidth="811.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Schedule By Contact">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="334.0" prefWidth="811.0">
+                           <children>
+                              <TableView fx:id="contactScheduleTable" layoutX="6.0" prefHeight="266.0" prefWidth="846.0">
+                                <columns>
+                                  <TableColumn id="Appt ID" fx:id="apptIdColumn" prefWidth="75.0" text="Appt ID." />
+                                  <TableColumn id="Title" fx:id="titleColumn" prefWidth="138.0" text="Title" />
+                                    <TableColumn id="Type" fx:id="contactTypeColumn" prefWidth="107.0" text="Type" />
+                                    <TableColumn id="Description" fx:id="descriptionColumn" prefWidth="177.0" text="Description" />
+                                    <TableColumn id="Start" fx:id="startColumn" prefWidth="138.0" text="Start" />
+                                    <TableColumn id="End" fx:id="endColumn" prefWidth="127.0" text="End" />
+                                    <TableColumn id="Customer ID" fx:id="customerIdColumn" prefWidth="83.0" text="Customer ID" />
+                                </columns>
+                              </TableView>
+                                    <ComboBox id="Division" fx:id="contactComboBox" layoutX="6.0" layoutY="270.0" onAction="#comboBoxContactClick" prefHeight="38.0" prefWidth="163.0" promptText="Contact:  Anika Costa" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Type &amp; Month Count">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="typeMonthTable" layoutX="6.0" prefHeight="266.0" prefWidth="846.0">
+                                 <columns>
+                                    <TableColumn id="Month" fx:id="monthColumn" prefWidth="222.0" text="Month" />
+                                    <TableColumn id="Type" fx:id="monthTypeColumn" prefWidth="425.0" text="Type" />
+                                    <TableColumn id="App" fx:id="numApptColumn" prefWidth="197.0" text="Number of Appointments" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Customer by Country Count">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="customerCountryTable" layoutX="6.0" prefHeight="266.0" prefWidth="846.0">
+                                 <columns>
+                                    <TableColumn id="Country" fx:id="countryColumn" prefWidth="438.55823135375977" text="Country" />
+                                    <TableColumn id="Customers" fx:id="countyCountyColumn" prefWidth="406.4417724609375" text="Number of Customers" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+        </VBox>
+        <HBox id="Save + Cancel" layoutX="771.0" layoutY="20.0" prefHeight="34.0" prefWidth="114.0">
+            <children>
+                <Button id="Cancel Button" fx:id="exitButton" cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#reportsExitButton" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #afaeae;" text="Exit" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+          <HBox id="Division + Country" layoutX="213.0" layoutY="20.0" pickOnBounds="false" prefHeight="100.0" prefWidth="403.0" />
+    </children>
+</AnchorPane>

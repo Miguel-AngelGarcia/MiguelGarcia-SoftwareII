@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="680.0" prefWidth="1317.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.DashboardController">
+   <children>
+      <ImageView fitHeight="218.0" fitWidth="186.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Teto.png" />
+         </image></ImageView>
+      <TabPane fx:id="tabPane" layoutX="24.0" layoutY="200.0" prefHeight="605.0" prefWidth="1257.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab id="Appointments" fx:id="appointmentTab" text="Appointments">
+            <content>
+              <AnchorPane id="Apoitments" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="dashboardAppointmentTable" layoutX="6.0" prefHeight="367.0" prefWidth="1252.0">
+                          <columns>
+                            <TableColumn id="Appt ID" fx:id="apptIdcolumn" prefWidth="92.75743103027344" text="Appt. ID" />
+                            <TableColumn id="Title" fx:id="apptTitleColumn" prefWidth="142.6851348876953" text="Title" />
+                              <TableColumn id="Desc." fx:id="apptDescColumn" prefWidth="200.31488037109375" text="Description" />
+                              <TableColumn id="Location" fx:id="appLocationColumn" minWidth="0.0" prefWidth="91.10650634765625" text="Location" />
+                              <TableColumn id="Contact" fx:id="apptContactColumn" prefWidth="101.47235107421875" text="Contact" />
+                              <TableColumn id="Type" fx:id="apptTypeColumn" prefWidth="117.9599609375" text="Type" />
+                              <TableColumn id="Start" fx:id="apptStartColumn" prefWidth="141.872314453125" text="Start" />
+                              <TableColumn id="End" fx:id="appEndColumn" prefWidth="138.627685546875" text="End" />
+                              <TableColumn id="CustomerID" fx:id="apptCustId" prefWidth="121.01416015625" text="Customer ID" />
+                              <TableColumn id="UserID" fx:id="apptUserID" prefWidth="103.05419921875" text="User ID" />
+                          </columns>
+                        </TableView>
+                        <HBox layoutX="6.0" layoutY="371.0" prefHeight="44.0" prefWidth="674.0">
+                           <children>
+                              <Button id="Add Appointment" fx:id="addAppointmentButton" alignment="CENTER" mnemonicParsing="false" onAction="#addAppointmentButton" prefHeight="43.0" prefWidth="136.0" text="Add Appointment" />
+                              <Button id="Modify Appointment" fx:id="modifyAppointmentButton" alignment="CENTER" mnemonicParsing="false" onAction="#modifyAppointmentButton" prefHeight="43.0" prefWidth="136.0" text="Modify Appointment">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="Delete Apointment" fx:id="deleteAppointmentButton" alignment="CENTER" mnemonicParsing="false" onAction="#deleteAppointmentButton" prefHeight="43.0" prefWidth="136.0" style="-fx-background-color: #e197b9 #e197b9;" text="Delete Appointment">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <SplitMenuButton fx:id="viewByButton" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="43.0" prefWidth="136.0" style="-fx-background-color: #ac73ff;" text="View By: All">
+                                <items>
+                                  <MenuItem id="All" fx:id="all" mnemonicParsing="false" onAction="#viewByAll" text="All" />
+                                  <MenuItem id="Week" fx:id="week" mnemonicParsing="false" onAction="#viewByWeek" text="Week" />
+                                    <MenuItem id="Month" fx:id="month" mnemonicParsing="false" onAction="#viewByMonth" text="Month" />
+                                </items>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </SplitMenuButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab id="Customer" fx:id="customerTab" text="Customers">
+            <content>
+              <AnchorPane id="Customers" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="dashboardCustomerTable" layoutX="6.0" prefHeight="367.0" prefWidth="1251.0">
+                           <columns>
+                              <TableColumn id="Customer ID" fx:id="customerIdcolumn" prefWidth="107.12660026550293" text="Customer ID" />
+                              <TableColumn id="Customer Name" fx:id="customerNameColumn" prefWidth="246.02029418945312" text="Customer Name" />
+                              <TableColumn id="Address" fx:id="customerAddress" prefWidth="309.8343200683594" text="Address" />
+                              <TableColumn id="Postal Code" fx:id="customerPostalCode" minWidth="0.0" prefWidth="144.6656494140625" text="Postal Code" />
+                              <TableColumn fx:id="customerPhone" prefWidth="147.0" text="Phone" />
+                              <TableColumn id="State/Provence" fx:id="customerStateProvince" minWidth="0.0" prefWidth="144.5" text="State/Provence" />
+                              <TableColumn id="Country" fx:id="customerCountry" prefWidth="151.4984130859375" text="Country" />
+                           </columns>
+                        </TableView>
+                        <HBox layoutX="6.0" layoutY="371.0" prefHeight="45.0" prefWidth="536.0">
+                           <children>
+                              <Button id="Add Customer" fx:id="addCustomerButton" mnemonicParsing="false" onAction="#addCustomerButton" prefHeight="43.0" prefWidth="136.0" text="Add Customer" />
+                              <Button id="Modify Customer" fx:id="modifyCustomerButton" mnemonicParsing="false" onAction="#modifyCustomerButton" prefHeight="43.0" prefWidth="136.0" text="Modify Customer">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="Delete Customer" fx:id="deleteCustomerButton" mnemonicParsing="false" onAction="#deleteCustomerButton" prefHeight="43.0" prefWidth="136.0" style="-fx-background-color: #e197b9 #e197b9;" text="Delete Customer">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button id="Sign Out" fx:id="signOutButton" layoutX="1192.0" layoutY="19.0" mnemonicParsing="false" onAction="#signOutButtonClick" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #afaeae;" text="Sign out" textFill="WHITE" />
+      <Button id="Reports" fx:id="reports" layoutX="1093.0" layoutY="19.0" mnemonicParsing="false" onAction="#reportsButton" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #8bc8ff;" text="Reports" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+At time: 2023-04-04T22:25:42.828882Z-UTC
+Attempted login by User: f
+Login attempt: Unsuccessful
+At time: 2023-04-04T22:38:46.252772Z-UTC
+Attempted login by User: test
+Login attempt: Successful
+At time: 2023-04-04T22:51:47.655647Z-UTC
+Attempted login by User: test
+Login attempt: Successful
+At time: 2023-04-04T22:54:19.580605Z-UTC
+Attempted login by User: test
+Login attempt: Successful
+At time: 2023-04-04T22:57:28.426838Z-UTC
+Attempted login by User: test
+Login attempt: Successful
+At time: 2023-04-04T23:02:24.890956Z-UTC
+Attempted login by User: admin
+Login attempt: Successful
+At time: 2023-04-04T23:24:09.968895Z-UTC
+Attempted login by User: admin
+Login attempt: Successful
+At time: 2023-04-04T23:42:14.859830Z-UTC
+Attempted login by User: admin
+Login attempt: Successful
+At time: 2023-04-04T23:44:32.441848Z-UTC
+Attempted login by User: admin
+Login attempt: Successful
+At time: 2023-04-04T23:50:26.002557Z-UTC
+Attempted login by User: admin
+Login attempt: Successful
+At time: 2023-04-04T23:53:09.975409Z-UTC
+Attempted login by User: admin
+Login attempt: Successful
+At time: 2023-04-04T23:55:45.595546Z-UTC
+Attempted login by User: admin
+Login attempt: Successful
+At time: 2023-04-05T02:57:46.971845Z-UTC
+Attempted login by User: admin
+Login attempt: Successful
+At time: 2023-04-05T02:59:51.044636Z-UTC
+Attempted login by User: test
+Login attempt: Successful
+At time: 2023-04-05T03:05:48.878944Z-UTC
+Attempted login by User: test
+Login attempt: Successful
+At time: 2023-04-05T03:08:09.023421Z-UTC
+Attempted login by User: test
+Login attempt: Successful
+At time: 2023-04-05T13:55:46.604306Z-UTC
+Attempted login by User: test
+Login attempt: Successful
+At time: 2023-04-05T13:57:43.324352Z-UTC
+Attempted login by User: admin
+Login attempt: Successful
+At time: 2023-04-05T13:58:49.649032Z-UTC
+Attempted login by User: admin
+Login attempt: Successful
+At time: 2023-04-05T14:00:42.532450Z-UTC
+Attempted login by User: test
+Login attempt: Successful
+At time: 2023-04-05T14:02:00.280372Z-UTC
+Attempted login by User: test
+Login attempt: Successful
+At time: 2023-04-05T14:07:31.039438Z-UTC
+Attempted login by User: test
+Login attempt: Successful
+At time: 2023-04-05T14:10:17.855171Z-UTC
+Attempted login by User: test
+Login attempt: Successful
+At time: 2023-04-05T14:13:28.669011Z-UTC
+Attempted login by User: test
+Login attempt: Successful
