@@ -19,6 +19,9 @@ import java.util.Optional;
 
 import DatabaseAccessObject.AppointmentsAccess;
 
+/**
+ * Controller to the dashbaord screen
+ */
 public class DashboardController {
     //Appointments Table
     @FXML
