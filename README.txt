@@ -21,6 +21,7 @@ VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o.
 
 JDK: 17.0.4
 JavaFX 17 SDK
+Maven Dependant
 
 Additional report
 
