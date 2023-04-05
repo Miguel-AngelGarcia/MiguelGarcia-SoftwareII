@@ -23,6 +23,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.sql.SQLException;
 
+/**
+ * Controller for Reports functionality
+ */
 public class ReportsController {
     @FXML
     private TableView<ReportByContact> contactScheduleTable;

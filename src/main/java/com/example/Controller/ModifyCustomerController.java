@@ -20,6 +20,9 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
+/**
+ * Controller for Modify Customer functionality
+ */
 public class ModifyCustomerController implements Initializable {
 
     @FXML

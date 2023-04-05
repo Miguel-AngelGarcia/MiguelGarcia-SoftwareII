@@ -24,6 +24,9 @@ import java.time.format.TextStyle;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+/**
+ * Controller for Login functionality
+ */
 public class LoginScreenController implements Initializable{
     private static int currUserID;
     //no longer local, an instance

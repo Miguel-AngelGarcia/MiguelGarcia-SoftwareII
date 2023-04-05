@@ -1,5 +1,8 @@
 package Model;
 
+/**
+ * Class for Customers Object, defined by author to fulfill project requirements.
+ */
 public class Customers {
 
     private int customerID;

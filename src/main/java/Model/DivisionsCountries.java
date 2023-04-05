@@ -1,5 +1,8 @@
 package Model;
 
+/**
+ * Class for DivisionsCountries Object, defined by author to fulfill project requirements.
+ */
 public class DivisionsCountries {
 
     private int divisionID;

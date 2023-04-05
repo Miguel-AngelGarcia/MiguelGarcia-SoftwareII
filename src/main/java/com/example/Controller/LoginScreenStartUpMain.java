@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- *
+ * Main
  */
 public class LoginScreenStartUpMain extends Application {
 

@@ -26,12 +26,10 @@ import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.HashMap;
 
-/*
-get current time, round to nearest hour
-Then autofill?
-*/
 
-
+/**
+ * Controller for AddAppointment, Lambda #1 in Initialize
+ */
 public class AddAppointmentController {
 
     @FXML private Label appointmentIDLabel;

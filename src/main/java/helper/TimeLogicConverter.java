@@ -12,8 +12,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * This class will do time conversions for us.
- * Each method is described below
+ * This class will do time conversions for us, Lambda #2 in setEndDate method
+ * Each method is described below.
  */
 public class TimeLogicConverter {
 

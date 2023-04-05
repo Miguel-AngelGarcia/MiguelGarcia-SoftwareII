@@ -3,6 +3,9 @@ package Model;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+/**
+ * Class for ReportsByContact Object, defined by author to fulfill project requirements.
+ */
 public class ReportByContact {
 
     private int contactID;

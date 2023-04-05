@@ -1,5 +1,8 @@
 package Model;
 
+/**
+ * Class for Users Object, defined by author to fulfill project requirements.
+ */
 public class Users {
 
     private int userID;

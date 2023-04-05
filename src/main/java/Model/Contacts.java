@@ -1,5 +1,8 @@
 package Model;
 
+/**
+ * Class for Contacts Object, defined by author to fulfill project requirements.
+ */
 public class Contacts {
 
     private int contactID;

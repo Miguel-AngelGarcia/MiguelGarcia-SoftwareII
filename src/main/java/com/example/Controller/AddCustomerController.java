@@ -18,6 +18,9 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 
+/**
+ * Controller for Add Customer functionality
+ */
 public class AddCustomerController {
 
     @FXML

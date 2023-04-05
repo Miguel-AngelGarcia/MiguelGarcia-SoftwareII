@@ -1,5 +1,8 @@
 package Model;
 
+/**
+ * Class for ReportsByCountry Object, defined by author to fulfill project requirements.
+ */
 public class ReportsByCountry {
 
     private String customerCountry;

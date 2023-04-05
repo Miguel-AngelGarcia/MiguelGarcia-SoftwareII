@@ -28,11 +28,10 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ResourceBundle;
 
-/*
-get current time, round to nearest hour
-Then autofill?
-*/
 
+/**
+ * Controller for Modify Appointment functionality, Lambda #1 also here.
+ */
 public class ModifyAppointmentController implements Initializable {
 
     @FXML private Label appointmentIDLabel;

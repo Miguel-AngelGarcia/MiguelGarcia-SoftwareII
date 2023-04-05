@@ -4,6 +4,9 @@ import helper.TimeLogicConverter;
 
 import java.util.HashMap;
 
+/**
+ *  Class for ReportsByMonth Object, defined by author to fulfill project requirements.
+ */
 public class ReportsByMonthType {
 
     private String appointmentMonth;

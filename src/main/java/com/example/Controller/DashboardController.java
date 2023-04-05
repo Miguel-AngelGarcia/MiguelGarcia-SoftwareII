@@ -20,7 +20,7 @@ import java.util.Optional;
 import DatabaseAccessObject.AppointmentsAccess;
 
 /**
- * Controller to the dashbaord screen
+ * Controller to the dashboard screen.
  */
 public class DashboardController {
     //Appointments Table

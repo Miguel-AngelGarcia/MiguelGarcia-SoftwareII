@@ -6,6 +6,9 @@ import java.time.LocalDateTime;
 
 import static helper.JDBC.connection;
 
+/**
+ * Class for Appointments Object, defined by author to fulfill project requirements.
+ */
 public class Appointments {
 
     private int appointmentID;

@@ -1,5 +1,8 @@
 package Model;
 
+/**
+ * Class for FirstLevelDivisions Object, defined by author to fulfill project requirements.
+ */
 public class FirstLevelDivisions {
 
     private int divisionID;

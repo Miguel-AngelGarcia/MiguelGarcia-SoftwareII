@@ -17,9 +17,14 @@ import java.sql.Time;
 import java.sql.Timestamp;
 import java.time.*;
 
+
 /**
- * This will run our errorChecker methods, Should demonstrate advanced error planning
- * Methods are described below.
+ * <p>
+ *  This will run our errorChecker methods, Should demonstrate advanced error planning
+ *  Methods are described below.
+ * </p>
+ *
+ *
  */
 public class ErrorChecker {
 

@@ -1,5 +1,8 @@
 package Model;
 
+/**
+ * Class for Countries Object, defined by author to fulfill project requirements.
+ */
 public class Countries {
 
     private int countryID;
