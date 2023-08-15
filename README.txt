@@ -1,4 +1,4 @@
-![](Teto.gif)
+![](https://github.com/Miguel-AngelGarcia/MiguelGarcia-SoftwareII/edit/main/Teto.gif)
 
 WGU C195 Software II - Performance Assessment
 Purpose of application
